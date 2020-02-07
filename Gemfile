@@ -24,7 +24,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-
+gem 'carrierwave',             '~> 1.2.2'
+gem 'mini_magick',             '~> 4.7.0'
 gem 'faker', '~> 1.7.3'
 gem 'will_paginate', '~> 3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
@@ -67,6 +68,7 @@ end
 
 group :production do
   gem 'pg', '1.1.4'
+  gem 'fog', '1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
